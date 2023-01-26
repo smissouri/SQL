@@ -1,0 +1,28 @@
+--Create a clothing store database
+
+CREATE TABLE clothingco (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, color TEXT );
+
+INSERT INTO clothingco VALUES (1,"blouse", 20, 18, "pink");
+INSERT INTO clothingco VALUES (2, "tshirt", 35, 12, "white");
+INSERT INTO clothingco VALUES (3, "jeans", 45, 30, "blue");
+INSERT INTO clothingco VALUES (4, "sweatpants", 18, 25, "gray");
+INSERT INTO clothingco VALUES (5, "hats", 50, 10, "tan");
+INSERT INTO clothingco VALUES (6, "gloves", 10, 8, "black" );
+INSERT INTO clothingco VALUES (7, "shorts", 39, 25, "blue");
+INSERT INTO clothingco VALUES (8, "skirts", 68, 40, "purple");
+INSERT INTO clothingco VALUES (9, "croptop", 46, 14, "red");
+INSERT INTO clothingco VALUES (10, "cargo pants", 41, 34, "green");
+INSERT INTO clothingco VALUES (11, "bralettes", 74, 17, "pink");
+INSERT INTO clothingco VALUES (12, "heels", 66, 28, "clear");
+INSERT INTO clothingco VALUES (13, "sneakers", 37, 99, "orange");
+INSERT INTO clothingco VALUES (14, "earrings", 56, 20, "gold");
+INSERT INTO clothingco VALUES (15, "necklaces", 67, 22, "gold");
+
+--display the database by price
+SELECT * FROM clothingco;
+SELECT * FROM clothingco ORDER BY price;
+
+--what is the stats for price and quantity?
+SELECT SUM(price) FROM clothingco;
+SELECT MAX(quantity) FROM clothingco;
+SELECT SUM(quantity) FROM clothingco;
